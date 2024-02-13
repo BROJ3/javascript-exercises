@@ -1,34 +1,25 @@
 const removeFromArray = function(array) {
-    //we have an array and a value to remove, not a index
 
-    //loop through array
+    //for each index of list check each argument
     for (let i=0; i<array.length;i++) {
 
-        //loop through argumenst
+        //loop through arguments for each array piece
         for (let j=0; j<arguments.length;j++) {
-            // if for each element in array, one of the aguments that 
+
+            // check if that argument is in the array 
             if (array[i]===arguments[j]) {
+
+                //remove argument matches with indexed number
                 array.splice(i,1)
             }
-            // isnt arg[0] aligns, remove it
         }
-
-
-
-
-
-        
     }
     return array
-    //if something indexed matches valueToRemove, remove it
- 
-    
-
-    
-
-    
 
 };
 
+
 // Do not edit below this line
 module.exports = removeFromArray;
+
+

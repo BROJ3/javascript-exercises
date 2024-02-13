@@ -1,6 +1,13 @@
 const sumAll = function () {
 
-    if (arguments[0] > arguments[1]) {
+    // check validity of arguments
+    if (arguments[0] < 0 || 
+        arguments[1] < 0 || 
+        typeof arguments[0] !== "number" ||
+         typeof arguments[1] !== "number" ) {
+        return "ERROR"
+    } else if (arguments[0] > arguments[1]) {
+
         //switch them
         //put first argument in temporary variable
         let temp = arguments[0];
